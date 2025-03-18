@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Letters</title>
+</head>
+
+<body>
+    <button onclick="filterRandomLetters();">Click me!</button>
+
+    <script>
+        function filterRandomLetters() {
+            const inputArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+            let randomLetters = [];
+            
+            for (let i = 0; i < inputArray.length; i++) {
+                if (Math.random() > 0.5) { 
+                    randomLetters.push(inputArray[i]);
+                }
+            }
+
+            let myString = `Here s ur word: ${randomLetters} :`;
+		filterRandomLetters("").reverse().join("");
+		console.log(myString);;
+             
+        }
+    </script>
+</body>
+
+</html>
